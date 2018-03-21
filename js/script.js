@@ -12,9 +12,10 @@ $(function() {
     $("#contact-link").click(function() {
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
+        }, 500);
     });
 
-    Query(document).ready(function() {
+   jQuery(document).ready(function() {
         jQuery('.post').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated flipInX',
             offset: 100
@@ -30,8 +31,8 @@ $(function() {
 	});
     jQuery(document).ready(function() {
         jQuery('.post2').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated  flipInX',
+            classToAdd: 'visible animated  lightSpeedIn',
             offset: 100
            });
     })
-})
+});
